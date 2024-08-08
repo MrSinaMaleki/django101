@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+</head>
+<body>
+    <h2>Here is the list of Products: </h2>
+    <hr>
+    {% for i in all_products %}
+        <h4 style="text-align: center">Name: {{ i.name }}, Price: {{ i.price }}</h4>
+        <hr>
+    {% endfor %}
+</body>
+</html>
